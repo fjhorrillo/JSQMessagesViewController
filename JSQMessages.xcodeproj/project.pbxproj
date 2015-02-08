@@ -119,7 +119,8 @@
 		88C4583019F5F7A0008FD427 /* JSQMessagesMediaViewBubbleImageMasker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C4582F19F5F7A0008FD427 /* JSQMessagesMediaViewBubbleImageMasker.m */; };
 		88E4D7131A0DBD6B000CC061 /* JSQMessages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8841B88719F4988800EA16B6 /* JSQMessages.strings */; };
 		94A4FA20C2FBD0D62614D5A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6750B77E8A7042BA0754B /* libPods.a */; };
-		9C0765921A86D6ED0023D987 /* JSQSystemSoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0765911A86D6ED0023D987 /* JSQSystemSoundPlayer.framework */; };
+		9C0F18B81A86E2420034400B /* JSQSystemSoundPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4ABB5B1A7DC2EF005A0A02 /* JSQSystemSoundPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C0F18B91A86E2420034400B /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4ABB5C1A7DC2EF005A0A02 /* JSQSystemSoundPlayer.m */; };
 		9C4ABB5E1A7DC2EF005A0A02 /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4ABB5C1A7DC2EF005A0A02 /* JSQSystemSoundPlayer.m */; };
 		9C56E2D71A8026A10093D9C7 /* JSQMessagesViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 88A25F6419D8E01A00924534 /* JSQMessagesViewController.xib */; };
 		9C56E2D81A8026BF0093D9C7 /* JSQMessagesCollectionViewCellIncoming.xib in Sources */ = {isa = PBXBuildFile; fileRef = 88A25F9019D8E01A00924534 /* JSQMessagesCollectionViewCellIncoming.xib */; };
@@ -378,7 +379,6 @@
 		88C4582E19F5F7A0008FD427 /* JSQMessagesMediaViewBubbleImageMasker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQMessagesMediaViewBubbleImageMasker.h; sourceTree = "<group>"; };
 		88C4582F19F5F7A0008FD427 /* JSQMessagesMediaViewBubbleImageMasker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQMessagesMediaViewBubbleImageMasker.m; sourceTree = "<group>"; };
 		97E6750B77E8A7042BA0754B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C0765911A86D6ED0023D987 /* JSQSystemSoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSQSystemSoundPlayer.framework; path = Frameworks/JSQSystemSoundPlayer.framework; sourceTree = "<group>"; };
 		9C4ABB5B1A7DC2EF005A0A02 /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
 		9C4ABB5C1A7DC2EF005A0A02 /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
 		9C5779D91A7DA95800E2912D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -420,7 +420,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0765921A86D6ED0023D987 /* JSQSystemSoundPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +440,6 @@
 		636A8663AEEE5C37B65C515D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C0765911A86D6ED0023D987 /* JSQSystemSoundPlayer.framework */,
 				88445B3419E0AE4A0014F889 /* CoreGraphics.framework */,
 				88445B4119E1B50B0014F889 /* CoreLocation.framework */,
 				88445B3219E0AE450014F889 /* Foundation.framework */,
@@ -767,6 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C577A011A7DAB1900E2912D /* JSQSystemSoundPlayer+JSQMessages.h in Headers */,
+				9C0F18B81A86E2420034400B /* JSQSystemSoundPlayer.h in Headers */,
 				9C577A021A7DAB1900E2912D /* NSString+JSQMessages.h in Headers */,
 				9C577A031A7DAB1900E2912D /* UIColor+JSQMessages.h in Headers */,
 				9C577A041A7DAB1900E2912D /* UIDevice+JSQMessages.h in Headers */,
@@ -1139,6 +1138,7 @@
 				9C56E2DB1A8026D30093D9C7 /* JSQMessagesToolbarContentView.xib in Sources */,
 				9C56E2DC1A8026D70093D9C7 /* JSQMessagesTypingIndicatorFooterView.xib in Sources */,
 				9C5779DE1A7DAAFA00E2912D /* JSQSystemSoundPlayer+JSQMessages.m in Sources */,
+				9C0F18B91A86E2420034400B /* JSQSystemSoundPlayer.m in Sources */,
 				9C5779DF1A7DAAFA00E2912D /* NSString+JSQMessages.m in Sources */,
 				9C5779E01A7DAAFA00E2912D /* UIColor+JSQMessages.m in Sources */,
 				9C5779E11A7DAAFA00E2912D /* UIDevice+JSQMessages.m in Sources */,
